@@ -9,6 +9,7 @@ All this can be achieved using bounding box coordinates.
 ## Object detection
 For object detection, it is preferable to use a lightweight model that is only trained to recognise one specific object.
 > I am using pretrained YOLOv5s, but it is worth retraining it to recognise people only. For now, COCO dataset is fine.
+
 It is important to note that classification models will not do the job, since the most important part for us is the bounding box coordinates.
 **YOLO results look like this:**
 |   | xmin   | ymin  | xmax  | ymax  | confidence | class | name   |
