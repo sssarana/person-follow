@@ -15,7 +15,7 @@ class PersonFollow(Node):
         self.scan_subscription = self.create_subscription(
             LaserScan, '/scan', self.scan_callback, 25)
         self.drive_publisher = self.create_publisher(
-            AckermannDriveStamped, '/drive', 25)
+            AckermannDriveStamped, '/ackermann_cmd', 25)
 
         self.get_logger().info("Person following starts now hehe")
         # PID controller parameters for steering
